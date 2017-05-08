@@ -1,5 +1,47 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+.container {
+  width: 100%;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+}
+.row {
+  margin: 3%;
+  padding: .5%;
+}
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+
+.rw-int {
+  margin: 1%;
+}
+
+[class*="col-"]{
+  min-height: 7px;
+  float: left;
+  margin: .5%;
+}
+.col-3 {
+  width: 32.3%;
+}
+
+.bg-dark-gray {
+  background: #fff;
+  height: 360px;
+  border: 1px solid #000;
+}
+.box-uno{
+  background: #5b5c5b;
+  height: 107px;
+  margin: 1%;
+  width: 31.3%;
 }
